@@ -47,7 +47,7 @@ export default function CenterDiv({ leftDivRef}) {
 
   return (
     <div className="flex flex-row justify-between border-black border-2 w-1/3 lg:w-1/2" style={{width:width?`${width}px`:''}} ref={centerDivRef}>
-      <p>Text</p>
+      <p></p>
       <div className="w-3 h-full cursor-ew-resize" onMouseDown={startResizing} onMouseUp={endResizing} onTouchStart={startResizing} onTouchEnd={endResizing}>
       </div>
     </div>

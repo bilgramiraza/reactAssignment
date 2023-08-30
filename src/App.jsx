@@ -11,7 +11,7 @@ function App() {
   };
 
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-col h-screen bg-white">
       <Header toggleModal={toggleModalState}/>
       <Body modalState={isModalOpen} toggleModal={toggleModalState}/>
       <Footer />

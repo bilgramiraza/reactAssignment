@@ -43,8 +43,8 @@ export default function LeftDiv({ leftDivRef }) {
   },[isResizing, setWidth]);
 
   return (
-    <div className='ms-3 ps-3 w-1/3 lg:w-1/4 border-black border-2 flex flex-row' style={{width:width?`${width}px`:''}} ref={leftDivRef}>
-      <div className="gird grid-cols-3 gap-3 overflow-scroll ">
+    <div className='ps-3 w-1/3 lg:w-1/4 border-black border-2 flex flex-row' style={{width:width?`${width}px`:''}} ref={leftDivRef}>
+      <div className="gird grid-cols-3 gap-3 overflow-scroll bg-[#e1ebed]">
         {Array.from({length:5}).map((_,index)=>(<div key={index} className="inline-block m-2 bg-gray-300 w-[50px] xl:w-[100px] h-[50px] xl:h-[100px]"></div>))}
       </div>
       <div className="w-3 cursor-ew-resize" onMouseDown={startResizing} onMouseUp={endResizing} onTouchStart={startResizing} onTouchEnd={endResizing}>

@@ -14,7 +14,7 @@ export default function Body({modalState, toggleModal}){
       <CenterDiv leftDivRef={leftDivRef}/>
       <RightDiv />
       <DraggableModal isOpen={modalState} handleClose={toggleModal}>
-        <p>Test</p>
+        <p></p>
       </DraggableModal>
     </main>
   );
