@@ -9,7 +9,7 @@ export default function Body({modalState, toggleModal}){
   const leftDivRef = useRef(null);
 
   return (
-    <main className="flex flex-row justify-start bg-white h-5/6">
+    <main className="flex flex-row justify-stretch bg-white h-5/6">
       <LeftDiv leftDivRef={leftDivRef}/>
       <CenterDiv leftDivRef={leftDivRef}/>
       <RightDiv />

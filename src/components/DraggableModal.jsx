@@ -6,9 +6,9 @@ function DraggableModal({ isOpen, handleClose, children }) {
 
   return (
     <Draggable handle=".modal-header">
-      <div className='absolute w-1/4 lg:w-1/5 h-1/4 lg:h-1/5 bg-gray-300 border-black border-2 top-16 left-1/3'>
+      <div className='absolute w-1/4 lg:w-1/5 h-1/4 lg:h-1/5 bg-gray-300 border-gray-300 border-2 top-16 left-1/3 rounded-md shadow-[rgba(0,_0,_0,_0.24)_-3px_3px_3px]'>
         <div className="modal-header cursor-grab flex flex-row-reverse h-1/5">
-          <span className="cursor-pointer bg-[#f5685f] text-white text-center text-4xl rounded-full w-9 h-9 font-bold" onClick={handleClose}>
+          <span className="cursor-pointer bg-[#f5685f] text-white text-center text-4xl rounded-full w-9 h-9 font-bold shadow-[rgba(0,_0,_0,_0.24)_0px_3px_3px]" onClick={handleClose} onTouchStart={handleClose}>
             &times;
           </span>
         </div>
