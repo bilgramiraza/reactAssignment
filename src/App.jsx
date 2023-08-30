@@ -1,6 +1,14 @@
+import Body from "./components/Body"
+import Footer from "./components/Footer"
+import Header from "./components/Header"
+
 function App() {
   return (
-    <h1 className="text-xl font-bold font-serif"> React Assignment </h1>
+    <div className="flex flex-col h-screen">
+      <Header />
+      <Body />
+      <Footer />
+    </div>
   )
 }
 
